@@ -1,14 +1,3 @@
-JAVAC=javac
-sources = $(EXP_1sep2010 *.java)
-classes = $(sources: .java=.class)
-
-all: $(classes)
-
-clean :
-	rm -rf *.class
-%.class : %.java
-	$(JAVAC) $<
-
 build-dir=../build
 theme=green-icon
 
@@ -20,6 +9,16 @@ clean:
 	rm -rf ${build-dir}
 
 
+#JAVAC=javac
+#sources = $(EXP_1sep2010 *.java)
+#classes = $(sources: .java=.class)
+
+#all: $(classes)
+
+#clean :
+#	rm -rf *.class
+#%.class : %.java
+#	$(JAVAC) $<
 # build-dir=../build
 # lib-dir=lib
 # build-js-dir=${build-dir}/js
